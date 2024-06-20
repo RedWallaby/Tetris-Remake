@@ -25,7 +25,7 @@ public class Block : MonoBehaviour
     {
         foreach (Tile tile in tiles)
         {
-			if (game.TileIsFree(tile.x, tile.y)) return true;
+			if (!game.TileIsFree(tile.x, tile.y)) return false;
 		}
         return true;
     }

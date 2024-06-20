@@ -8,7 +8,6 @@ public class Morph : Block
 	/// <returns>A bool if the move was successful</returns>
     public override bool MoveDown()
     {
-		print("Sup");
         if (!base.MoveDown()) return false;
         if (GetHighestTile() - y == 3)
         {
