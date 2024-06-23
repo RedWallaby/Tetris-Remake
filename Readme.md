@@ -1,7 +1,7 @@
 # Tetris, Remade
 
 ## Description
-A simple but effective remake of tetris that allows players to enjoy the core elements of the original game
+A simple but effective remake of tetris made in unity that allows players to enjoy the core elements of the original game
 while allowing for new features that redefine the gameplay. The project was made to utilise the OOP programming
 paradigm and show its usefullness in projects such as this.
 
