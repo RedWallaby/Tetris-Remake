@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 
 /// <summary>
-/// Class <c>Game</c> controls all aspects of board including movement of falling blocks and varous
+/// Class <c>Game</c> controls all aspects of board including movement of falling blocks and various
 /// row checking aspects
 /// </summary>
 public class Game : MonoBehaviour
@@ -37,7 +37,7 @@ public class Game : MonoBehaviour
 	public float moveTimer = 0.5f;
 
     /// <summary>
-    /// Creates a new block from a given range
+    /// Creates a new block from a given range of preset blocks
     /// </summary>
     public void CreateNewBlock()
     {
@@ -295,7 +295,6 @@ public class Game : MonoBehaviour
             board[i, y] = null;
         }
 
-        //negative of using 2d arrays (cannot copy rows easily)
         for (int i = y; i > 0; i--)
         {
             for (int j = 0; j < board.GetLength(0); j++)

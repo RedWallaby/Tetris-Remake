@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Class <c>Block</c> Controls falling motion and collision checking of new tiles
+/// Class <c>Block</c> controls falling motion and collision checking of new tiles
 /// </summary>
 public class Block : MonoBehaviour
 {
@@ -113,16 +113,14 @@ public class Block : MonoBehaviour
 	/// </remarks>
 	public virtual void Rotate()
     {
-        //check if rotation is valid
         foreach (Tile tile in tiles)
         {
 			float xDiff = tile.x - x - xRot;
             float yDiff = tile.y - y - yRot;
-            (xDiff, yDiff) = (-yDiff, xDiff); //this is now backwards due to the board's y axis being inverted (increase in y is down the screen)
+            (xDiff, yDiff) = (-yDiff, xDiff);
 			if (!game.TileIsFree((int)(x + xRot + xDiff), (int)(y + yRot + yDiff))) return;
         }
 
-        //complete rotation
         foreach (Tile tile in tiles)
         {
 			float xDiff = tile.x - x - xRot;
