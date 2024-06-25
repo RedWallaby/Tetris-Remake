@@ -14,5 +14,13 @@ paradigm and show its usefullness in projects such as this.
 - A point system for you to track your score
 - A menu system to make navigating the game easy
 
+## Controls
+Use: 
+- a/left arrow to move blocks left
+- d/right arrow to move blocks right
+- w/up arrow to rotate blocks
+- s/down arrow to speed up the fall of blocks
+- space to instant place
+
 ## Usage
 To run the game download and unzip the zip file attatched then run 'Tetris Remake.exe'
